@@ -1,0 +1,55 @@
+.form {
+  min-width: 300px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  margin: 2rem;
+}
+
+.form__section {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.form__headline {
+  background-color: #ddd6fe;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form__question,
+.form__answer,
+.form__tag,
+.form__button {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #ddd6fe;
+  padding: 1.5rem;
+  align-items: center;
+  border: none;
+  transition: all 1s;
+}
+.form__button:hover {
+  background-color: #8800ff;
+  color: white;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form__answer__textarea,
+.form__question__textarea,
+.form__tag__textarea {
+  height: 6rem;
+}

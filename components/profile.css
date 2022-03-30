@@ -18,7 +18,7 @@
 }
 
 .profil__picture {
-  width: 10rem;
+  _width: 10rem;
   border-radius: 50%;
 }
 
@@ -54,10 +54,8 @@
   align-content: center;
   padding: 1.5rem;
   border: none;
-  transition: all 1s;
 }
-.skills__button:hover {
+.skills__button:active {
   background-color: #8800ff;
   color: white;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
 }

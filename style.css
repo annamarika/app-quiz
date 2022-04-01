@@ -1,6 +1,6 @@
 @import "./base.css";
 @import "./components/footer.css";
 @import "./components/header.css";
-@import "./components/question.css";
+@import "./components/question/question.css";
 @import "./components/form.css";
 @import "./components/profile.css";

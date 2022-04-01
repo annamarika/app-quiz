@@ -10,11 +10,19 @@
   position: relative;
 }
 
-.question__bookmark {
+.question__bookmark__button {
+  background-color: white;
+  border: none;
   position: absolute;
   top: -10px;
   right: 20px;
+}
+.question__bookmark {
   background-color: white;
+}
+
+.question__bookmark--save {
+  background-color: #6850de;
 }
 
 /* .question__bookmark--saved {
@@ -50,6 +58,17 @@
   _transition: background 0.3s ease-in, color 0.3s ease-in;
 }
 
+.question__button--hide {
+  display: none;
+}
+
+.question__answer {
+  display: block;
+}
+.question__answer--hide {
+  display: none;
+}
+
 .question__tags {
   display: flex;
   display: row;
@@ -58,7 +77,6 @@
 }
 
 .question__onetag {
-  background-color: #6850de;
-  color: white;
+  background-color: #ddd6fe;
   padding: 0.3rem 0.8rem;
 }

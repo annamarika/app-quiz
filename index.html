@@ -17,14 +17,22 @@
     <header>
       <h1>QUIZ-APP</h1>
     </header>
-    <section class="question">
+    <section class="question" data-js="question">
       <div>
         <h2 class="question__headline">Question</h2>
-        <img
-          class="question__bookmark"
-          src="./images/bookmark.svg"
-          alt="bookmark icon"
-        />
+        <div data-js="question__bookmark__button">
+          <button
+            class="question__bookmark__button"
+            data-js="question__bookmark__button__js"
+          >
+            <img
+              src="./images/bookmark.svg"
+              alt="bookmark icon"
+              class="question__bookmark"
+              data-js="question__bookmark__js"
+            />
+          </button>
+        </div>
       </div>
       <article class="question__article">
         <p class="question__question">
@@ -34,8 +42,19 @@
           laudantium autem consectetur voluptates.
         </p>
 
-        <button class="question__button">Hide Answer</button>
-        <p class="question__answer">
+        <button
+          class="question__button question__button--hide"
+          data-js="question__button__show__js"
+        >
+          Show Answer
+        </button>
+        <button class="question__button" data-js="question__button__hide__js">
+          Hide Answer
+        </button>
+        <p
+          class="question__answer question__button--hide"
+          data-js="question__answer__js"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum neque
           non quia vel esse voluptas eius maxime aperiam, enim ipsa numquam
           eaque atque molestiae mollitia magnam! Rem, blanditiis cupiditate?
@@ -49,15 +68,20 @@
         <li class="question__onetag">lorem</li>
       </ul>
     </section>
-
-    <section class="question">
+    <section class="question" data-js="question">
       <div>
         <h2 class="question__headline">Question</h2>
-        <img
-          class="question__bookmark"
-          src="./images/bookmark.svg"
-          alt="bookmark icon"
-        />
+        <button
+          class="question__bookmark__button"
+          data-js="question__bookmark__button__js"
+        >
+          <img
+            src="./images/bookmark.svg"
+            alt="bookmark icon"
+            class="question__bookmark"
+            data-js="question__bookmark__js"
+          />
+        </button>
       </div>
       <article class="question__article">
         <p class="question__question">
@@ -67,8 +91,19 @@
           laudantium autem consectetur voluptates.
         </p>
 
-        <button class="question__button">Hide Answer</button>
-        <p class="question__answer">
+        <button
+          class="question__button question__button--hide"
+          data-js="question__button__show__js"
+        >
+          Show Answer
+        </button>
+        <button class="question__button" data-js="question__button__hide__js">
+          Hide Answer
+        </button>
+        <p
+          class="question__answer question__button--hide"
+          data-js="question__answer__js"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum neque
           non quia vel esse voluptas eius maxime aperiam, enim ipsa numquam
           eaque atque molestiae mollitia magnam! Rem, blanditiis cupiditate?
@@ -99,5 +134,6 @@
         /></a>
       </nav>
     </footer>
+    <script src="./index.js" type="module" defer></script>
   </body>
 </html>

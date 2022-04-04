@@ -2,7 +2,7 @@ import QuestionCard from "./components/question/question.js";
 
 import BookmarkButton from "./components/bookmarks/bookmarks.js";
 
-import Content from "./content.js";
+import Footer from "./components/footer/footer.js";
 
 const Questions = document.querySelectorAll('[data-js="question"]')
 
@@ -16,7 +16,7 @@ Bookmarks.forEach((bookmark) => {
     BookmarkButton(bookmark);
 });
 
-Content();
+Footer();
 
 
 

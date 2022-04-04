@@ -9,16 +9,16 @@ const hideButton = questionButton.querySelector('[data-js="question__button__hid
 
 
 showButton.addEventListener("click", () => {
-    answer.classList.toggle("question__answer--hide");
-    hideButton.classList.toggle("question__button--hide");
-    showButton.classList.toggle("question__button--hide");
+    answer.classList.remove("hide");
+    hideButton.classList.remove("hide");
+    showButton.classList.add("hide");
   
 });
 
 hideButton.addEventListener("click", () => {
-    hideButton.classList.toggle("question__button--hide");
-    answer.classList.toggle("question__answer--hide"); 
-showButton.classList.toggle("question__button--hide");
+    hideButton.classList.add("hide");
+    answer.classList.add("hide"); 
+showButton.classList.remove("hide");
 
 
     

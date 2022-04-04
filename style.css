@@ -1,5 +1,5 @@
 @import "./base.css";
-@import "./components/footer.css";
+@import "./components/footer/footer.css";
 @import "./components/header.css";
 @import "./components/question/question.css";
 @import "./components/form.css";

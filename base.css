@@ -29,3 +29,7 @@ li {
 h1 {
   font-size: 3rem;
 }
+
+.hide {
+  display: none;
+}

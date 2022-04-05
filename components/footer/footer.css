@@ -15,12 +15,21 @@ footer {
 }
 
 .footer__icon {
-  padding: 1.5rem;
   width: 25%;
   display: flex;
   justify-content: center;
 }
 
-.footer__icon:active {
-  background-color: #8800ff;
+.footer__button {
+  background-color: #ddd6fe;
+  border: none;
+  padding: 1.5rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+.nav__background--activ {
+  background-color: #6850de;
 }

@@ -1,5 +1,10 @@
-header {
-  width: 100%;
+.question__side__header,
+.bookmarks__side__header,
+.form__side__header,
+.profil__side__header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   background-color: #ddd6fe;
   font-size: 1rem;

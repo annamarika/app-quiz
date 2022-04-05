@@ -13,125 +13,339 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
-      <h1>QUIZ-APP</h1>
-    </header>
-    <section class="question" data-js="question">
-      <div>
-        <h2 class="question__headline">Question</h2>
-        <div data-js="question__bookmark__button">
-          <button
-            class="question__bookmark__button"
-            data-js="question__bookmark__button__js"
-          >
+  <body data-js="content">
+    <!-- Quiz-App -->
+
+    <div class="question__side" data-js="question__side">
+      <header class="question__side question__side__header">
+        <h1>QUIZ-APP</h1>
+      </header>
+      <div class="question__container">
+        <section class="question" data-js="question">
+          <div>
+            <h2 class="question__headline">Question</h2>
+            <div data-js="question__bookmark__button">
+              <button
+                class="question__bookmark__button"
+                data-js="question__bookmark__button__js"
+              >
+                <img
+                  src="./images/bookmark.svg"
+                  alt="bookmark icon"
+                  class="question__bookmark"
+                  data-js="question__bookmark__js"
+                />
+              </button>
+            </div>
+          </div>
+          <article class="question__article">
+            <p class="question__question">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+              cumque ad earum! Quibusdam, numquam! Adipisci officiis rem error
+              blanditiis cumque ea, dolores reiciendis quisquam obcaecati,
+              recusandae laudantium autem consectetur voluptates.
+            </p>
+
+            <button
+              class="question__button question__button--hide"
+              data-js="question__button__show__js"
+            >
+              Show Answer
+            </button>
+            <button
+              class="question__button hide"
+              data-js="question__button__hide__js"
+            >
+              Hide Answer
+            </button>
+            <p class="question__answer hide" data-js="question__answer__js">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              neque non quia vel esse voluptas eius maxime aperiam, enim ipsa
+              numquam eaque atque molestiae mollitia magnam! Rem, blanditiis
+              cupiditate? Delectus?
+            </p>
+          </article>
+          <ul class="question__tags">
+            <li class="question__onetag">lorem</li>
+            <li class="question__onetag">lorem</li>
+            <li class="question__onetag">lorem</li>
+            <li class="question__onetag">lorem</li>
+          </ul>
+        </section>
+        <section class="question" data-js="question">
+          <div>
+            <h2 class="question__headline">Question</h2>
+            <div data-js="question__bookmark__button">
+              <button
+                class="question__bookmark__button"
+                data-js="question__bookmark__button__js"
+              >
+                <img
+                  src="./images/bookmark.svg"
+                  alt="bookmark icon"
+                  class="question__bookmark"
+                  data-js="question__bookmark__js"
+                />
+              </button>
+            </div>
+          </div>
+          <article class="question__article">
+            <p class="question__question">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+              cumque ad earum! Quibusdam, numquam! Adipisci officiis rem error
+              blanditiis cumque ea, dolores reiciendis quisquam obcaecati,
+              recusandae laudantium autem consectetur voluptates.
+            </p>
+
+            <button
+              class="question__button question__button--hide"
+              data-js="question__button__show__js"
+            >
+              Show Answer
+            </button>
+            <button
+              class="question__button hide"
+              data-js="question__button__hide__js"
+            >
+              Hide Answer
+            </button>
+            <p class="question__answer hide" data-js="question__answer__js">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              neque non quia vel esse voluptas eius maxime aperiam, enim ipsa
+              numquam eaque atque molestiae mollitia magnam! Rem, blanditiis
+              cupiditate? Delectus?
+            </p>
+          </article>
+          <ul class="question__tags">
+            <li class="question__onetag">lorem</li>
+            <li class="question__onetag">lorem</li>
+            <li class="question__onetag">lorem</li>
+            <li class="question__onetag">lorem</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- Bookmarks -->
+
+    <div class="bookmark__side hide" data-js="bookmark__side">
+      <header class="bookmark__side bookmarks__side__header">
+        <h1>BOOKMARKS</h1>
+      </header>
+      <div class="question__container">
+        <section class="question" data-js="question">
+          <div>
+            <h2 class="question__headline">Question</h2>
+            <div data-js="question__bookmark__button">
+              <button
+                class="question__bookmark__button"
+                data-js="question__bookmark__button__js"
+              >
+                <img
+                  src="./images/bookmark.svg"
+                  alt="bookmark icon"
+                  class="question__bookmark"
+                  data-js="question__bookmark__js"
+                />
+              </button>
+            </div>
+          </div>
+          <article class="question__article">
+            <p class="question__question">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+              cumque ad earum! Quibusdam, numquam! Adipisci officiis rem error
+              blanditiis cumque ea, dolores reiciendis quisquam obcaecati,
+              recusandae laudantium autem consectetur voluptates.
+            </p>
+
+            <button
+              class="question__button question__button--hide"
+              data-js="question__button__show__js"
+            >
+              Show Answer
+            </button>
+            <button
+              class="question__button hide"
+              data-js="question__button__hide__js"
+            >
+              Hide Answer
+            </button>
+            <p class="question__answer hide" data-js="question__answer__js">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              neque non quia vel esse voluptas eius maxime aperiam, enim ipsa
+              numquam eaque atque molestiae mollitia magnam! Rem, blanditiis
+              cupiditate? Delectus?
+            </p>
+          </article>
+          <ul class="question__tags">
+            <li class="question__onetag">lorem</li>
+            <li class="question__onetag">lorem</li>
+            <li class="question__onetag">lorem</li>
+            <li class="question__onetag">lorem</li>
+          </ul>
+        </section>
+        <section class="question" data-js="question">
+          <div>
+            <h2 class="question__headline">Question</h2>
+            <div data-js="question__bookmark__button">
+              <button
+                class="question__bookmark__button"
+                data-js="question__bookmark__button__js"
+              >
+                <img
+                  src="./images/bookmark.svg"
+                  alt="bookmark icon"
+                  class="question__bookmark"
+                  data-js="question__bookmark__js"
+                />
+              </button>
+            </div>
+          </div>
+          <article class="question__article">
+            <p class="question__question">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+              cumque ad earum! Quibusdam, numquam! Adipisci officiis rem error
+              blanditiis cumque ea, dolores reiciendis quisquam obcaecati,
+              recusandae laudantium autem consectetur voluptates.
+            </p>
+
+            <button
+              class="question__button question__button--hide"
+              data-js="question__button__show__js"
+            >
+              Show Answer
+            </button>
+            <button
+              class="question__button hide"
+              data-js="question__button__hide__js"
+            >
+              Hide Answer
+            </button>
+            <p class="question__answer hide" data-js="question__answer__js">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              neque non quia vel esse voluptas eius maxime aperiam, enim ipsa
+              numquam eaque atque molestiae mollitia magnam! Rem, blanditiis
+              cupiditate? Delectus?
+            </p>
+          </article>
+          <ul class="question__tags">
+            <li class="question__onetag">lorem</li>
+            <li class="question__onetag">lorem</li>
+            <li class="question__onetag">lorem</li>
+            <li class="question__onetag">lorem</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- form -->
+    <div class="form__side hide" data-js="form__side">
+      <header class="form__side form__side__header">
+        <h1>CREATE</h1>
+      </header>
+
+      <div class="form__container">
+        <form class="form">
+          <fieldset class="form__question">
+            <label class="form__headline" for="add question">
+              Add Question
+            </label>
+            <textarea
+              class="form__question__textarea"
+              name="add question"
+              id="add question"
+              placeholder="add your question"
+            ></textarea>
+          </fieldset>
+          <fieldset class="form__answer">
+            <label class="form__headline" for="add answer"> Add Answer </label>
+            <textarea
+              class="form__answer__textarea"
+              name="add answer"
+              id="add answer"
+              placeholder="add your answer"
+            ></textarea>
+          </fieldset>
+          <fieldset class="form__tag">
+            <label class="form__headline" for="add tags">Add Tags</label>
+            <textarea
+              class="form__tag__textarea"
+              name="add tags"
+              id="add tags"
+              placeholder="add tags divided by comma"
+            ></textarea>
+          </fieldset>
+          <button class="form__button">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- profil -->
+
+    <div class="profil__side hide" data-js="profil__side">
+      <header class="profil__side profil__side__header">
+        <h1>QUIZ-APP</h1>
+      </header>
+      <div class="profil__container">
+        <main class="profil">
+          <div class="profil__picturename">
             <img
-              src="./images/bookmark.svg"
-              alt="bookmark icon"
-              class="question__bookmark"
-              data-js="question__bookmark__js"
+              class="profil__picture"
+              src="http://source.unsplash.com/random/100x100/?portrait"
+              alt="portrait"
             />
-          </button>
-        </div>
-      </div>
-      <article class="question__article">
-        <p class="question__question">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est cumque
-          ad earum! Quibusdam, numquam! Adipisci officiis rem error blanditiis
-          cumque ea, dolores reiciendis quisquam obcaecati, recusandae
-          laudantium autem consectetur voluptates.
-        </p>
+            <h2 class="profil__name">Max Mustermann</h2>
+          </div>
+          <article class="profil__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
+            sequi praesentium suscipit, ut quis necessitatibus expedita nulla
+            deleniti, ad enim pariatur accusantium aut ea. Quaerat fugiat minus
+            non exercitationem beatae.
+          </article>
 
-        <button
-          class="question__button question__button--hide"
-          data-js="question__button__show__js"
-        >
-          Show Answer
-        </button>
-        <button class="question__button" data-js="question__button__hide__js">
-          Hide Answer
-        </button>
-        <p
-          class="question__answer question__button--hide"
-          data-js="question__answer__js"
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum neque
-          non quia vel esse voluptas eius maxime aperiam, enim ipsa numquam
-          eaque atque molestiae mollitia magnam! Rem, blanditiis cupiditate?
-          Delectus?
-        </p>
-      </article>
-      <ul class="question__tags">
-        <li class="question__onetag">lorem</li>
-        <li class="question__onetag">lorem</li>
-        <li class="question__onetag">lorem</li>
-        <li class="question__onetag">lorem</li>
-      </ul>
-    </section>
-    <section class="question" data-js="question">
-      <div>
-        <h2 class="question__headline">Question</h2>
-        <button
-          class="question__bookmark__button"
-          data-js="question__bookmark__button__js"
-        >
-          <img
-            src="./images/bookmark.svg"
-            alt="bookmark icon"
-            class="question__bookmark"
-            data-js="question__bookmark__js"
-          />
-        </button>
+          <section class="skills">
+            <h3 class="skills__headline">skill</h3>
+            <ul class="skills__tags">
+              <li class="skills__onetag">lorem</li>
+              <li class="skills__onetag">lorem</li>
+              <li class="skills__onetag">lorem</li>
+              <li class="skills__onetag">lorem</li>
+            </ul>
+          </section>
+          <button class="skills__button">logout</button>
+        </main>
       </div>
-      <article class="question__article">
-        <p class="question__question">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est cumque
-          ad earum! Quibusdam, numquam! Adipisci officiis rem error blanditiis
-          cumque ea, dolores reiciendis quisquam obcaecati, recusandae
-          laudantium autem consectetur voluptates.
-        </p>
+    </div>
 
-        <button
-          class="question__button question__button--hide"
-          data-js="question__button__show__js"
-        >
-          Show Answer
-        </button>
-        <button class="question__button" data-js="question__button__hide__js">
-          Hide Answer
-        </button>
-        <p
-          class="question__answer question__button--hide"
-          data-js="question__answer__js"
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum neque
-          non quia vel esse voluptas eius maxime aperiam, enim ipsa numquam
-          eaque atque molestiae mollitia magnam! Rem, blanditiis cupiditate?
-          Delectus?
-        </p>
-      </article>
-      <ul class="question__tags">
-        <li class="question__onetag">lorem</li>
-        <li class="question__onetag">lorem</li>
-        <li class="question__onetag">lorem</li>
-        <li class="question__onetag">lorem</li>
-      </ul>
-    </section>
+    <!-- footer -->
 
     <footer>
       <nav class="footer">
-        <a class="footer__icon" href="./index.html"
-          ><img src="./images/home.svg" alt="home icon"
-        /></a>
-        <a class="footer__icon" href="./bookmarks.html"
-          ><img src="./images/bookmark.svg" alt="bookmark icon"
-        /></a>
-        <a class="footer__icon" href="./create.html"
-          ><img src="./images/notes.svg" alt="home icon"
-        /></a>
-        <a class="footer__icon" href="./profile.html"
-          ><img src="./images/profil.svg" alt="home icon"
-        /></a>
+        <ul class="footer">
+          <li class="footer__icon">
+            <button
+              class="footer__button nav__background--activ"
+              data-js="footer__button--home"
+            >
+              <img src="./images/home.svg" alt="home icon" />
+            </button>
+          </li>
+          <li class="footer__icon">
+            <button class="footer__button" data-js="footer__button--bookmark">
+              <img src="./images/bookmark.svg" alt="bookmark icon" />
+            </button>
+          </li>
+          <li class="footer__icon">
+            <button class="footer__button" data-js="footer__button--notes">
+              <img src="./images/notes.svg" alt="home icon" />
+            </button>
+          </li>
+          <li class="footer__icon">
+            <button class="footer__button" data-js="footer__button--profil">
+              <img src="./images/profil.svg" alt="home icon" />
+            </button>
+          </li>
+        </ul>
       </nav>
     </footer>
     <script src="./index.js" type="module" defer></script>

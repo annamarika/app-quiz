@@ -1,19 +1,11 @@
 .form {
   min-width: 300px;
-  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
   margin: 2rem;
-}
-
-.form__section {
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   gap: 1rem;
+  min-height: 70vh;
 }
 
 .form__headline {
@@ -31,6 +23,7 @@
 .form__button {
   display: flex;
   flex-direction: column;
+  border: none;
 }
 
 .form__button {

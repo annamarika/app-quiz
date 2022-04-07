@@ -2,16 +2,22 @@ import QuestionCard from "./question.js";
 import BookmarkButton from "../bookmarks/bookmarks.js";
 
 export default function QuestionCardJs() {
-  /*  const url =
+  const apiURL =
     "https://opentdb.com/api.php?amount=10&category=20&difficulty=easy&type=multiple";
 
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => console.log(data.results))
-    .catch((error) => console.error(`Fehler: ${error}`));
-*/
+  async function questionFetch(url) {
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      questionList(data.results);
+    } catch (error) {
+      console.error(error.message);
+    }
+  }
 
-  const cardData = [
+  questionFetch(apiURL);
+
+  /* const cardData = [
     {
       id: "1",
       isBookmarked: true,
@@ -35,16 +41,17 @@ export default function QuestionCardJs() {
       answer: "Dortmund",
       tags: ["Bier", "Tradition", "Deutschland"],
     },
-  ];
+  ];*/
 
   /* HTML einfügen */
+  function questionList(cardData) {
+    console.log(cardData);
+    const questionContainer = document.querySelector(".question__container");
 
-  const questionContainer = document.querySelector(".question__container");
-
-  cardData.forEach((cardDataItem) => {
-    const container = document.createElement("section");
-    container.classList.add("question");
-    container.innerHTML = `
+    cardData.forEach((cardDataItem) => {
+      const container = document.createElement("section");
+      container.classList.add("question");
+      container.innerHTML = `
     <div>
     <h2 class="question__headline">Question</h2>
     <div data-js="question__bookmark__button">
@@ -74,36 +81,42 @@ export default function QuestionCardJs() {
       Hide Answer
     </button>
     <p class="question__answer hide" data-js="question__answer__js">
-      ${cardDataItem.answer}
+      ${cardDataItem.correct_answer}
     </p>
   </article>
   
     `;
-    /* tags */
+      /* tags */
 
-    const listElement = document.createElement("ul");
-    listElement.className = "question__tags";
-    container.append(listElement);
+      const listElement = document.createElement("ul");
+      listElement.className = "question__tags";
+      container.append(listElement);
 
-    cardDataItem.tags.forEach((tag) => {
-      const item = document.createElement("li");
-      item.className = "question__onetag";
+      cardDataItem.tags = [
+        cardDataItem.category,
+        cardDataItem.type,
+        cardDataItem.difficulty,
+      ];
+      cardDataItem.tags.forEach((tag) => {
+        const item = document.createElement("li");
+        item.className = "question__onetag";
 
-      item.textContent = tag;
-      listElement.append(item);
+        item.textContent = tag;
+        listElement.append(item);
+      });
+      questionContainer.append(container);
+
+      /* question.js export*/
+
+      QuestionCard(container);
     });
-    questionContainer.append(container);
 
-    /* question.js export*/
+    const Bookmarks = document.querySelectorAll(
+      '[data-js="question__bookmark__button"]'
+    );
 
-    QuestionCard(container);
-  });
-
-  const Bookmarks = document.querySelectorAll(
-    '[data-js="question__bookmark__button"]'
-  );
-
-  Bookmarks.forEach((bookmark) => {
-    BookmarkButton(bookmark);
-  });
+    Bookmarks.forEach((bookmark) => {
+      BookmarkButton(bookmark);
+    });
+  }
 }

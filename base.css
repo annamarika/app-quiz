@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ h2,
 h3,
 button,
 li {
-  font-family: "Courier Prime", monospace;
+  font-family: 'Courier Prime', monospace;
 }
 
 h1 {

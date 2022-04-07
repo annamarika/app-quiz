@@ -1,27 +1,24 @@
-import QuestionCard from "./components/question/question.js";
+import QuestionCard from './components/question/question.js';
 
-import BookmarkButton from "./components/bookmarks/bookmarks.js";
+import BookmarkButton from './components/bookmarks/bookmarks.js';
 
-import Footer from "./components/footer/footer.js";
+import Footer from './components/footer/footer.js';
 
-const Questions = document.querySelectorAll('[data-js="question"]')
+const Questions = document.querySelectorAll('[data-js="question"]');
 
-Questions.forEach((question) => {
-    QuestionCard(question);
+Questions.forEach(question => {
+  QuestionCard(question);
 });
 
-const Bookmarks = document.querySelectorAll('[data-js="question__bookmark__button"]')
+const Bookmarks = document.querySelectorAll(
+  '[data-js="question__bookmark__button"]'
+);
 
-Bookmarks.forEach((bookmark) => {
-    BookmarkButton(bookmark);
+Bookmarks.forEach(bookmark => {
+  BookmarkButton(bookmark);
 });
 
 Footer();
-
-
-
-
-
 
 /*
 

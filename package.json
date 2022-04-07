@@ -1,0 +1,19 @@
+{
+  "name": "app-quiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annamarika/app-quiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annamarika/app-quiz/issues"
+  },
+  "homepage": "https://github.com/annamarika/app-quiz#readme"
+}
